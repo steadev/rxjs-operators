@@ -10,7 +10,12 @@ import { RouterModule } from "@angular/router";
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+  ],
+  exports: [
+    CommonModule,
+    FormsModule,
+    RouterModule,
   ]
 })
 export class SharedModule { }
