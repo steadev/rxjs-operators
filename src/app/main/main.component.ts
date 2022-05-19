@@ -3,11 +3,13 @@ import { RouterService } from '../services/router/router.service';
 
 enum OperatorType {
   Filtering = 'filtering',
-  Conversion = 'conversion',
-  Combinatorial = 'combinatorial',
-  Math = 'math',
+  Transformation = 'transformation',
+  Combination = 'combination',
+  Mathmetical = 'mathmetical',
   Utility = 'utility',
-  Conditional = 'conditional'
+  Conditional = 'conditional',
+  Creation = 'creation',
+
 }
 
 @Component({

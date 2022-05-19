@@ -16,6 +16,13 @@ import { DebounceComponent } from './debounce/debounce.component';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { DistinctComponent } from './distinct/distinct.component';
 import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct-until-changed.component';
+import { ElementAtComponent } from './element-at/element-at.component';
+import { FindIndexComponent } from './find-index/find-index.component';
+import { IgnoreElementsComponent } from './ignore-elements/ignore-elements.component';
+import { SampleComponent } from './sample/sample.component';
+import { ThrottleComponent } from './throttle/throttle.component';
+import { ThrottleTimeComponent } from './throttle-time/throttle-time.component';
+import { FindComponent } from './find/find.component';
 
 
 @NgModule({
@@ -34,7 +41,14 @@ import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct
     DebounceComponent,
     DebounceTimeComponent,
     DistinctComponent,
-    DistinctUntilChangedComponent
+    DistinctUntilChangedComponent,
+    ElementAtComponent,
+    FindIndexComponent,
+    IgnoreElementsComponent,
+    SampleComponent,
+    ThrottleComponent,
+    ThrottleTimeComponent,
+    FindComponent
   ],
   imports: [
     SharedModule,

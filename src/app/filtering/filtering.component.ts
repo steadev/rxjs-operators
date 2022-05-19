@@ -1,23 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterService } from './../services/router/router.service';
 
-enum FilteringOperatorType {
-  filter = 'filter',
-  first = 'first',
-  last = 'last',
-  take = 'take',
-  takeUntil = 'takeUntil',
-  takeWhile = 'takeWhile',
-  takeLast = 'takeLast',
-  skip = 'skip',
-  skipUntil = 'skipUntil',
-  skipWhile = 'skipWhile',
-  debounce = 'debounce',
-  debounceTime = 'debounceTime',
-  distinct = 'distinct',
-  distinctUntilChanged = 'distinctUntilChanged'
-}
-
 @Component({
   selector: 'app-filtering',
   templateUrl: './filtering.component.html',
@@ -25,14 +8,36 @@ enum FilteringOperatorType {
 })
 export class FilteringComponent implements OnInit {
 
-  FilteringOperatorType = FilteringOperatorType;
+  operators = [
+    'filter',
+    'first',
+    'last',
+    'take',
+    'takeUntil',
+    'takeWhile',
+    'takeLast',
+    'skip',
+    'skipUntil',
+    'skipWhile',
+    'debounce',
+    'debounceTime',
+    'distinct',
+    'distinctUntilChanged',
+    'throttle',
+    'throttleTime',
+    'find',
+    'findIndex',
+    'elementAt',
+    'ignoreElements',
+    'sample'
+  ]
 
   constructor(private routerService: RouterService) { }
 
   ngOnInit(): void {
   }
 
-  onClickOperator(type: FilteringOperatorType): void {
+  onClickOperator(type: string): void {
     this.routerService.navigate(`filtering/${type}`);
   }
 }

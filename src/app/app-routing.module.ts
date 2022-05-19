@@ -8,28 +8,32 @@ const routes: Routes = [
     component: MainComponent
   },
   {
+    path: 'creation',
+    loadChildren: () => import('./creation/creation.module').then(m => m.CreationModule)
+  },
+  {
+    path: 'conditional',
+    loadChildren: () => import('./conditional/conditional.module').then(m => m.ConditionalModule)
+  },
+  {
     path: 'filtering',
     loadChildren: () => import('./filtering/filtering.module').then(m => m.FilteringModule)
   },
   {
-    path: 'conversion',
-    loadChildren: () => import('./conversion/conversion.module').then(m => m.ConversionModule)
-  },
-  {
-    path: 'combinatorial',
+    path: 'combination',
     loadChildren: () => import('./combination/combination.module').then(m => m.CombinationModule)
   },
   {
-    path: 'math',
+    path: 'mathmetical',
     loadChildren: () => import('./math/math.module').then(m => m.MathModule)
+  },
+  {
+    path: 'transformation',
+    loadChildren: () => import('./transformation/transformation.module').then(m => m.TransformationModule)
   },
   {
     path: 'utility',
     loadChildren: () => import('./utility/utility.module').then(m => m.UtilityModule)
-  },
-  {
-    path: 'conditional',
-    loadChildren: () => import('./condition/condition.module').then(m => m.ConditionModule)
   }
 ];
 

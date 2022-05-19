@@ -1,18 +1,5 @@
 <div class="operator-list-container">
   <ul>
-    <li (click)="onClickOperator(FilteringOperatorType.filter)">filter</li>
-    <li (click)="onClickOperator(FilteringOperatorType.first)">first</li>
-    <li (click)="onClickOperator(FilteringOperatorType.last)">last</li>
-    <li (click)="onClickOperator(FilteringOperatorType.take)">take</li>
-    <li (click)="onClickOperator(FilteringOperatorType.takeUntil)">takeUntil</li>
-    <li (click)="onClickOperator(FilteringOperatorType.takeWhile)">takeWhile</li>
-    <li (click)="onClickOperator(FilteringOperatorType.takeLast)">takeLast</li>
-    <li (click)="onClickOperator(FilteringOperatorType.skip)">skip</li>
-    <li (click)="onClickOperator(FilteringOperatorType.skipUntil)">skipUntil</li>
-    <li (click)="onClickOperator(FilteringOperatorType.skipWhile)">skipWhile</li>
-    <li (click)="onClickOperator(FilteringOperatorType.debounce)">debounce</li>
-    <li (click)="onClickOperator(FilteringOperatorType.debounceTime)">debounceTime</li>
-    <li (click)="onClickOperator(FilteringOperatorType.distinct)">distinct</li>
-    <li (click)="onClickOperator(FilteringOperatorType.distinctUntilChanged)">distinctUntilChanged</li>
+    <li *ngFor="let operator of this.operators" (click)="onClickOperator(operator)">{{operator}}</li>
   </ul>
 </div>
