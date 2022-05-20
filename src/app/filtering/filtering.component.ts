@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Operator } from '../operator';
 import { RouterService } from './../services/router/router.service';
 
 @Component({
@@ -6,8 +7,9 @@ import { RouterService } from './../services/router/router.service';
   templateUrl: './filtering.component.html',
   styleUrls: ['./filtering.component.scss']
 })
-export class FilteringComponent implements OnInit {
+export class FilteringComponent extends Operator implements OnInit {
 
+  operatorGroup: string = 'filtering';
   operators = [
     'filter',
     'first',
@@ -32,12 +34,14 @@ export class FilteringComponent implements OnInit {
     'sample'
   ]
 
-  constructor(private routerService: RouterService) { }
+  constructor(protected routerService: RouterService) {
+    super(routerService);
+  }
 
   ngOnInit(): void {
   }
 
   onClickOperator(type: string): void {
-    this.routerService.navigate(`filtering/${type}`);
+    this.navigateToOperator(type);
   }
 }

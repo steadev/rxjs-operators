@@ -1,5 +1,5 @@
-<div class="operator-list-container">
-  <ul>
-    <li *ngFor="let operator of this.operators" (click)="onClickOperator(operator)">{{operator}}</li>
-  </ul>
-</div>
+<app-operator-list
+  [operators]="this.operators"
+  (onClickOperator)="onClickOperator($event)"
+>
+</app-operator-list>
