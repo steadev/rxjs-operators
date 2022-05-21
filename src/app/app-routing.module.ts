@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'mathmetical',
-    loadChildren: () => import('./math/math.module').then(m => m.MathModule)
+    loadChildren: () => import('./mathmetical/mathmetical.module').then(m => m.MathmeticalModule)
   },
   {
     path: 'transformation',

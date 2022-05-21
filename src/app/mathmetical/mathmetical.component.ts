@@ -3,12 +3,12 @@ import { Operator } from '../operator';
 import { RouterService } from '../services/router/router.service';
 
 @Component({
-  selector: 'app-conditional',
+  selector: 'app-mathmetical',
   templateUrl: '../operator-list.html'
 })
-export class ConditionalComponent extends Operator implements OnInit {
+export class MathmeticalComponent extends Operator implements OnInit {
 
-  operatorGroup: string = 'conditional';
+  operatorGroup: string = 'mathmetical';
   operators: string[] = [];
 
   constructor(protected routerService: RouterService) { 

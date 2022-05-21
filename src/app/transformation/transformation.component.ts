@@ -4,8 +4,7 @@ import { RouterService } from './../services/router/router.service';
 
 @Component({
   selector: 'app-transformation',
-  templateUrl: './transformation.component.html',
-  styleUrls: ['./transformation.component.scss']
+  templateUrl: '../operator-list.html'
 })
 export class TransformationComponent extends Operator implements OnInit {
 
@@ -35,9 +34,5 @@ export class TransformationComponent extends Operator implements OnInit {
   }
 
   ngOnInit(): void {
-  }
-
-  onClickOperator(operator: string): void {
-    this.navigateToOperator(operator);
   }
 }

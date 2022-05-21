@@ -4,8 +4,7 @@ import { RouterService } from './../services/router/router.service';
 
 @Component({
   selector: 'app-filtering',
-  templateUrl: './filtering.component.html',
-  styleUrls: ['./filtering.component.scss']
+  templateUrl: '../operator-list.html'
 })
 export class FilteringComponent extends Operator implements OnInit {
 
@@ -39,9 +38,5 @@ export class FilteringComponent extends Operator implements OnInit {
   }
 
   ngOnInit(): void {
-  }
-
-  onClickOperator(type: string): void {
-    this.navigateToOperator(type);
   }
 }

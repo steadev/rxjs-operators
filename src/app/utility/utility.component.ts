@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { Operator } from '../operator';
+import { RouterService } from './../services/router/router.service';
 
 @Component({
   selector: 'app-utility',
-  templateUrl: './utility.component.html',
-  styleUrls: ['./utility.component.scss']
+  templateUrl: '../operator-list.html'
 })
-export class UtilityComponent implements OnInit {
+export class UtilityComponent extends Operator implements OnInit {
 
-  constructor() { }
+  operatorGroup: string = 'utility';
+  operators: string[] = [
+    'delay',
+    'delayWhen'
+  ];
+
+  constructor(protected routerService: RouterService) { 
+    super(routerService);
+  }
 
   ngOnInit(): void {
   }
-
 }

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MathmeticalComponent } from './mathmetical.component';
 
-import { MathComponent } from './math.component';
 
-describe('MathComponent', () => {
-  let component: MathComponent;
-  let fixture: ComponentFixture<MathComponent>;
+describe('MathmeticalComponent', () => {
+  let component: MathmeticalComponent;
+  let fixture: ComponentFixture<MathmeticalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MathComponent ]
+      declarations: [ MathmeticalComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MathComponent);
+    fixture = TestBed.createComponent(MathmeticalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

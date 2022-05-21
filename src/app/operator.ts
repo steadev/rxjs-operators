@@ -6,9 +6,11 @@ export abstract class Operator {
 
   }
 
-  abstract onClickOperator(operator: string): void;
+  onClickOperator(operator: string): void {
+    this.navigateToOperator(operator);
+  }
   
-  protected navigateToOperator(operator: string): void {
+  private navigateToOperator(operator: string): void {
     this.routerService.navigate(`${this.operatorGroup}/${operator}`);
   }
 }

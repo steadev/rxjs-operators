@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { Operator } from '../operator';
+import { RouterService } from '../services/router/router.service';
 
 @Component({
   selector: 'app-creation',
-  templateUrl: './creation.component.html',
-  styleUrls: ['./creation.component.scss']
+  templateUrl: '../operator-list.html'
 })
-export class CreationComponent implements OnInit {
+export class CreationComponent extends Operator implements OnInit {
 
-  constructor() { }
+  operatorGroup: string = 'creation';
+  operators: string[] = [];
+
+  constructor(protected routerService: RouterService) { 
+    super(routerService);
+  }
 
   ngOnInit(): void {
   }
-
 }
