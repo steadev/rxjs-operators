@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  operatorTypes = [
+    'Filtering',
+    'Transformation',
+    'Combination',
+    'Mathmetical',
+    'Utility',
+    'Conditional',
+    'Creation'
+  ]
 }

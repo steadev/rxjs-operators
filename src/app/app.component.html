@@ -1,1 +1,7 @@
-<router-outlet></router-outlet>
+<div class="operator-container">
+  <div class="operator-type" *ngFor="let type of this.operatorTypes">
+    <div class="title">
+      {{type}} Operators
+    </div>
+  </div>
+</div>

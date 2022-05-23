@@ -40,7 +40,8 @@ export const FilterOperators = [
   'findIndex',
   'elementAt',
   'ignoreElements',
-  'sample'
+  'sample',
+  'sampleTime'
 ];
 
 export const MathmeticalOperators = [
