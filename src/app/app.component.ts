@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OperatorCategory } from './interfaces/operator';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  operatorTypes = [
-    'Filtering',
-    'Transformation',
-    'Combination',
-    'Mathmetical',
-    'Utility',
-    'Conditional',
-    'Creation'
-  ]
+  operatorCategories = OperatorCategory;
 }

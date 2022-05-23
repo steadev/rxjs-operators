@@ -12,7 +12,7 @@ export const ConditionalOperators = [
   'every',
   'sequenceEqual'
 ];
-export const CreationOperators = [
+export const CreationObservables = [
   'from',
   'interval',
   'of',
@@ -75,3 +75,34 @@ export const UtilityOperators = [
   'delay',
   'delayWhen'
 ]
+
+export const OperatorCategory = [
+  {
+    operatorType: 'creation observables',
+    operators: CreationObservables
+  },
+  {
+    operatorType: 'transformation operators',
+    operators: TransformationOperators
+  },
+  {
+    operatorType: 'filtering operators',
+    operators: FilterOperators
+  },
+  {
+    operatorType: 'combination operators',
+    operators: CombinationOperators
+  },
+  {
+    operatorType: 'mathmetical operators',
+    operators: MathmeticalOperators
+  },
+  {
+    operatorType: 'utility operators',
+    operators: UtilityOperators
+  },
+  {
+    operatorType: 'conditional operators',
+    operators: ConditionalOperators
+  },
+];

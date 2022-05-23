@@ -1,7 +1,12 @@
-<div class="operator-container">
-  <div class="operator-type" *ngFor="let type of this.operatorTypes">
-    <div class="title">
-      {{type}} Operators
+
+<div class="container">
+  <div class="operator-list-container">
+    <div class="operator-type" *ngFor="let category of this.operatorCategories">
+      <div class="title">{{category.operatorType}}</div>
+      <div class="operator" *ngFor="let operator of category.operators">{{operator}}</div>
     </div>
+  </div>
+  <div class="operator-container">
+    hello world
   </div>
 </div>
