@@ -1,12 +1,17 @@
 
 <div class="container">
-  <div class="operator-list-container">
-    <div class="operator-type" *ngFor="let category of this.operatorCategories">
-      <div class="title">{{category.operatorType}}</div>
-      <div class="operator" *ngFor="let operator of category.operators">{{operator}}</div>
-    </div>
+  <div class="title-wrapper">
+    <h1>RxJS</h1>
+    <h3>Rx Observables</h3>
   </div>
-  <div class="operator-container">
-    hello world
+  <div class="operator-list-container">
+    <div class="operator-type-container">
+      <div class="operator-type" *ngFor="let category of this.operatorCategories">
+        <div class="title">{{category.operatorType}}</div>
+        <div class="operator" *ngFor="let operator of category.operators" (click)="onClickOperator(operator)">{{operator}}</div>
+      </div>
+    </div>
+    <div class="operator-container">
+    </div>
   </div>
 </div>
