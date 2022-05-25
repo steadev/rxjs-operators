@@ -6,7 +6,7 @@ export const CombinationOperators = [
   'startWith',
   'withLatestFrom',
   'zip'
-]
+];
 export const ConditionalOperators = [
   'defaultIfEmpty',
   'every',
@@ -17,7 +17,7 @@ export const CreationObservables = [
   'interval',
   'of',
   'timer'
-]
+];
 
 export const FilterOperators = [
   'filter',
@@ -74,7 +74,7 @@ export const TransformationOperators = [
 export const UtilityOperators = [
   'delay',
   'delayWhen'
-]
+];
 
 export const OperatorCategory = [
   {

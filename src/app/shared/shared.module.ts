@@ -16,6 +16,7 @@ import { FromComponent } from '../creation/from/from.component';
 import { IntervalComponent } from '../creation/interval/interval.component';
 import { OfComponent } from '../creation/of/of.component';
 import { TimerComponent } from '../creation/timer/timer.component';
+import { OperatorDirective } from "../directives/operator.directive";
 import { DebounceTimeComponent } from '../filtering/debounce-time/debounce-time.component';
 import { DebounceComponent } from '../filtering/debounce/debounce.component';
 import { DistinctUntilChangedComponent } from '../filtering/distinct-until-changed/distinct-until-changed.component';
@@ -85,7 +86,8 @@ import { MinComponent } from './../mathmetical/min/min.component';
     RaceComponent,
     StartWithComponent,
     WithLatestFromComponent,
-    ZipComponent
+    ZipComponent,
+    OperatorDirective
   ],
   imports: [
     CommonModule,
@@ -135,7 +137,8 @@ import { MinComponent } from './../mathmetical/min/min.component';
     RaceComponent,
     StartWithComponent,
     WithLatestFromComponent,
-    ZipComponent
+    ZipComponent,
+    OperatorDirective
   ]
 })
 export class SharedModule { }
