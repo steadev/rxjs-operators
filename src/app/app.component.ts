@@ -9,6 +9,7 @@ import { OperatorCategory } from './interfaces/operator';
 export class AppComponent {
 
   operatorCategories = OperatorCategory;
+  operator: string | undefined;
 
   onClickOperator(operator: string): void {
     const url = new URL(location.origin);
@@ -20,7 +21,7 @@ export class AppComponent {
   hashChangeHandler(event: HashChangeEvent) {
     const url = new URL(event.newURL);
     const hash = url.hash;
-    console.log(hash);
-    const operator = hash.replace('#', '');
+    this.operator = hash.replace('#', '');
+    console.log(this.operator);
   }
 }

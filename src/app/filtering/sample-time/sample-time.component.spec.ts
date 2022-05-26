@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TransformationComponent } from './transformation.component';
 
+import { SampleTimeComponent } from './sample-time.component';
 
-describe('TransformationComponent', () => {
-  let component: TransformationComponent;
-  let fixture: ComponentFixture<TransformationComponent>;
+describe('SampleTimeComponent', () => {
+  let component: SampleTimeComponent;
+  let fixture: ComponentFixture<SampleTimeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TransformationComponent ]
+      declarations: [ SampleTimeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TransformationComponent);
+    fixture = TestBed.createComponent(SampleTimeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

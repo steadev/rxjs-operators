@@ -28,6 +28,7 @@ import { FindComponent } from '../filtering/find/find.component';
 import { FirstComponent } from '../filtering/first/first.component';
 import { IgnoreElementsComponent } from '../filtering/ignore-elements/ignore-elements.component';
 import { LastComponent } from '../filtering/last/last.component';
+import { SampleTimeComponent } from "../filtering/sample-time/sample-time.component";
 import { SampleComponent } from '../filtering/sample/sample.component';
 import { SkipUntilComponent } from '../filtering/skip-until/skip-until.component';
 import { SkipWhileComponent } from '../filtering/skip-while/skip-while.component';
@@ -38,11 +39,29 @@ import { TakeWhileComponent } from '../filtering/take-while/take-while.component
 import { TakeComponent } from '../filtering/take/take.component';
 import { ThrottleTimeComponent } from '../filtering/throttle-time/throttle-time.component';
 import { ThrottleComponent } from '../filtering/throttle/throttle.component';
+import { ReduceComponent } from "../mathmetical/reduce/reduce.component";
 import { DelayWhenComponent } from '../utility/delay-when/delay-when.component';
 import { DelayComponent } from '../utility/delay/delay.component';
 import { CountComponent } from './../mathmetical/count/count.component';
 import { MaxComponent } from './../mathmetical/max/max.component';
 import { MinComponent } from './../mathmetical/min/min.component';
+import { BufferCountComponent } from './../transformation/buffer-count/buffer-count.component';
+import { BufferTimeComponent } from './../transformation/buffer-time/buffer-time.component';
+import { BufferToggleComponent } from './../transformation/buffer-toggle/buffer-toggle.component';
+import { BufferWhenComponent } from './../transformation/buffer-when/buffer-when.component';
+import { BufferComponent } from './../transformation/buffer/buffer.component';
+import { ConcatMapToComponent } from './../transformation/concat-map-to/concat-map-to.component';
+import { ConcatMapComponent } from './../transformation/concat-map/concat-map.component';
+import { MapToComponent } from './../transformation/map-to/map-to.component';
+import { MapComponent } from './../transformation/map/map.component';
+import { MergeMapToComponent } from './../transformation/merge-map-to/merge-map-to.component';
+import { MergeMapComponent } from './../transformation/merge-map/merge-map.component';
+import { PairwiseComponent } from './../transformation/pairwise/pairwise.component';
+import { PluckComponent } from './../transformation/pluck/pluck.component';
+import { RepeatComponent } from './../transformation/repeat/repeat.component';
+import { ScanComponent } from './../transformation/scan/scan.component';
+import { SwitchMapToComponent } from './../transformation/switch-map-to/switch-map-to.component';
+import { SwitchMapComponent } from './../transformation/switch-map/switch-map.component';
 
 
 @NgModule({
@@ -87,6 +106,25 @@ import { MinComponent } from './../mathmetical/min/min.component';
     StartWithComponent,
     WithLatestFromComponent,
     ZipComponent,
+    SampleTimeComponent,
+    ReduceComponent,
+    BufferComponent,
+    BufferCountComponent,
+    BufferTimeComponent,
+    BufferToggleComponent,
+    BufferWhenComponent,
+    ConcatMapComponent,
+    ConcatMapToComponent,
+    MapComponent,
+    MapToComponent,
+    MergeMapComponent,
+    MergeMapToComponent,
+    PairwiseComponent,
+    PluckComponent,
+    RepeatComponent,
+    ScanComponent,
+    SwitchMapComponent,
+    SwitchMapToComponent,
     OperatorDirective
   ],
   imports: [
@@ -95,9 +133,6 @@ import { MinComponent } from './../mathmetical/min/min.component';
     RouterModule,
   ],
   exports: [
-    CommonModule,
-    FormsModule,
-    RouterModule,
     DelayComponent,
     DelayWhenComponent,
     FilterComponent,
@@ -138,6 +173,25 @@ import { MinComponent } from './../mathmetical/min/min.component';
     StartWithComponent,
     WithLatestFromComponent,
     ZipComponent,
+    SampleTimeComponent,
+    ReduceComponent,
+    BufferComponent,
+    BufferCountComponent,
+    BufferTimeComponent,
+    BufferToggleComponent,
+    BufferWhenComponent,
+    ConcatMapComponent,
+    ConcatMapToComponent,
+    MapComponent,
+    MapToComponent,
+    MergeMapComponent,
+    MergeMapToComponent,
+    PairwiseComponent,
+    PluckComponent,
+    RepeatComponent,
+    ScanComponent,
+    SwitchMapComponent,
+    SwitchMapToComponent,
     OperatorDirective
   ]
 })

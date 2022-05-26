@@ -12,7 +12,65 @@
       </div>
     </div>
     <div class="operator-container">
-
+      <app-combine-latest *ngIf="this.operator === 'combineLatest'"></app-combine-latest>
+      <app-concat *ngIf="this.operator === 'concat'"></app-concat>
+      <app-merge *ngIf="this.operator === 'merge'"></app-merge>
+      <app-race *ngIf="this.operator === 'race'"></app-race>
+      <app-start-with *ngIf="this.operator === 'startWith'"></app-start-with>
+      <app-with-latest-from *ngIf="this.operator === 'withLatestFrom'"></app-with-latest-from>
+      <app-zip *ngIf="this.operator === 'zip'"></app-zip>
+      <app-default-if-empty *ngIf="this.operator === 'defaultIfEmpty'"></app-default-if-empty>
+      <app-every *ngIf="this.operator === 'every'"></app-every>
+      <app-sequence-equal *ngIf="this.operator === 'sequenceEqual'"></app-sequence-equal>
+      <app-from *ngIf="this.operator === 'from'"></app-from>
+      <app-interval *ngIf="this.operator === 'interval'"></app-interval>
+      <app-of *ngIf="this.operator === 'of'"></app-of>
+      <app-timer *ngIf="this.operator === 'timer'"></app-timer>
+      <app-filter *ngIf="this.operator === 'filter'"></app-filter>
+      <app-first *ngIf="this.operator === 'first'"></app-first>
+      <app-last *ngIf="this.operator === 'last'"></app-last>
+      <app-take *ngIf="this.operator === 'take'"></app-take>
+      <app-take-until *ngIf="this.operator === 'takeUntil'"></app-take-until>
+      <app-take-while *ngIf="this.operator === 'takeWhile'"></app-take-while>
+      <app-take-last *ngIf="this.operator === 'takeLast'"></app-take-last>
+      <app-skip *ngIf="this.operator === 'skip'"></app-skip>
+      <app-skip-until *ngIf="this.operator === 'skipUntil'"></app-skip-until>
+      <app-skip-while *ngIf="this.operator === 'skipWhile'"></app-skip-while>
+      <app-debounce *ngIf="this.operator === 'debounce'"></app-debounce>
+      <app-debounce-time *ngIf="this.operator === 'debounceTime'"></app-debounce-time>
+      <app-distinct *ngIf="this.operator === 'distinct'"></app-distinct>
+      <app-distinct-until-changed *ngIf="this.operator === 'distinctUntilChanged'"></app-distinct-until-changed>
+      <app-throttle *ngIf="this.operator === 'throttle'"></app-throttle>
+      <app-throttle-time *ngIf="this.operator === 'throttleTime'"></app-throttle-time>
+      <app-find *ngIf="this.operator === 'find'"></app-find>
+      <app-find-index *ngIf="this.operator === 'findIndex'"></app-find-index>
+      <app-element-at *ngIf="this.operator === 'elementAt'"></app-element-at>
+      <app-ignore-elements *ngIf="this.operator === 'ignoreElements'"></app-ignore-elements>
+      <app-sample *ngIf="this.operator === 'sample'"></app-sample>
+      <app-sample-time *ngIf="this.operator === 'sampleTime'"></app-sample-time>
+      <app-count *ngIf="this.operator === 'count'"></app-count>
+      <app-max *ngIf="this.operator === 'max'"></app-max>
+      <app-min *ngIf="this.operator === 'min'"></app-min>
+      <app-reduce *ngIf="this.operator === 'reduce'"></app-reduce>
+      <app-buffer *ngIf="this.operator === 'buffer'"></app-buffer>
+      <app-buffer-count *ngIf="this.operator === 'bufferCount'"></app-buffer-count>
+      <app-buffer-time *ngIf="this.operator === 'bufferTime'"></app-buffer-time>
+      <app-buffer-toggle *ngIf="this.operator === 'bufferToggle'"></app-buffer-toggle>
+      <app-buffer-when *ngIf="this.operator === 'bufferWhen'"></app-buffer-when>
+      <app-concat-map *ngIf="this.operator === 'concatMap'"></app-concat-map>
+      <app-concat-map-to *ngIf="this.operator === 'concatMapTo'"></app-concat-map-to>
+      <app-map *ngIf="this.operator === 'map'"></app-map>
+      <app-map-to *ngIf="this.operator === 'mapTo'"></app-map-to>
+      <app-merge-map *ngIf="this.operator === 'mergeMap'"></app-merge-map>
+      <app-merge-map-to *ngIf="this.operator === 'mergeMapTo'"></app-merge-map-to>
+      <app-pairwise *ngIf="this.operator === 'pairwise'"></app-pairwise>
+      <app-pluck *ngIf="this.operator === 'pluck'"></app-pluck>
+      <app-repeat *ngIf="this.operator === 'repeat'"></app-repeat>
+      <app-scan *ngIf="this.operator === 'scan'"></app-scan>
+      <app-switch-map *ngIf="this.operator === 'switchMap'"></app-switch-map>
+      <app-switch-map-to *ngIf="this.operator === 'switchMapTo'"></app-switch-map-to>
+      <app-delay *ngIf="this.operator === 'delay'"></app-delay>
+      <app-delay-when *ngIf="this.operator === 'delayWhen'"></app-delay-when>
     </div>
   </div>
 </div>
