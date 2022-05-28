@@ -9,6 +9,7 @@ import { RaceComponent } from '../combination/race/race.component';
 import { StartWithComponent } from '../combination/start-with/start-with.component';
 import { WithLatestFromComponent } from '../combination/with-latest-from/with-latest-from.component';
 import { ZipComponent } from '../combination/zip/zip.component';
+import { MarbleDiagramComponent } from "../common/marble-diagram/marble-diagram.component";
 import { DefaultIfEmptyComponent } from '../conditional/default-if-empty/default-if-empty.component';
 import { EveryComponent } from '../conditional/every/every.component';
 import { SequenceEqualComponent } from '../conditional/sequence-equal/sequence-equal.component';
@@ -125,6 +126,7 @@ import { SwitchMapComponent } from './../transformation/switch-map/switch-map.co
     ScanComponent,
     SwitchMapComponent,
     SwitchMapToComponent,
+    MarbleDiagramComponent,
     OperatorDirective
   ],
   imports: [
@@ -192,6 +194,7 @@ import { SwitchMapComponent } from './../transformation/switch-map/switch-map.co
     ScanComponent,
     SwitchMapComponent,
     SwitchMapToComponent,
+    MarbleDiagramComponent,
     OperatorDirective
   ]
 })
