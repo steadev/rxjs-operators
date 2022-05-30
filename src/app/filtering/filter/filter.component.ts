@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { range } from 'rxjs';
-import { filter } from 'rxjs/operators';
+import { interval } from 'rxjs';
+import { filter, take, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-filter',
@@ -10,6 +10,8 @@ import { filter } from 'rxjs/operators';
 export class FilterComponent implements OnInit {
 
   content: string = '';
+  published: string | number | undefined;
+  result: string | number | undefined;
   
   constructor() { }
 
@@ -18,7 +20,11 @@ export class FilterComponent implements OnInit {
   }
 
   filter(): void {
-    range(1, 5).pipe(filter(x => x % 2 === 0))
-	    .subscribe(x => console.log(`result: ${x}`));
+    interval(1000).pipe(
+      take(10),
+      tap(x => this.published = x),
+      filter(x => x % 2 === 0)
+    )
+    .subscribe(x => this.result = x);
   }
 }
